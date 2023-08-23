@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+  --Font-Lexend-Deca:'Lexend Deca', cursive;
+  --Font-Big-Shoulders-Display:'Big Shoulders Display', cursive;
+}
+body{
+    background-color: var(--Very-light-gray);
+    /* font-size: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 800px;
+    /* height: 500px; */
+    
+}
+.column{
+    padding: 2rem;
+}
+.column h2{
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    font-family: var(--Font-Big-Shoulders-Display);
+}
+.column p{
+    color: var(--Transparent-white);
+    font-family: var(--Font-Lexend-Deca);
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+.sedans button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: var(--Bright-orange);
+    font-family: var(--Font-Lexend-Deca);
+}
+.suvs button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: var(--Dark-cyan);
+    font-family: var(--Font-Lexend-Deca);
+}
+.luxury button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: var(--Very-dark-cyan);
+    font-family: var(--Font-Lexend-Deca);
+}
+
+.sedans{
+    background-color: var(--Bright-orange);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.suvs{
+    background-color: var(--Dark-cyan);
+}
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
